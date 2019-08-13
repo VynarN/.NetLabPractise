@@ -6,6 +6,7 @@ namespace Hometask1
     {
         static void Main(string[] args)
         {
+            #region Hometask #1
             #region Testing all the classes related to Rectangle
             var top_left = (x:0.0,y:4.0);
             var bottom_right = (x:7.0,y:0.0);
@@ -65,6 +66,7 @@ namespace Hometask1
             Console.WriteLine($"({ob1}) * ({ob2}) = {ob1 * ob2}");
             Console.WriteLine($"({ob1}) / ({ob2}) = {ob1 / ob2}");
             #endregion
+            #endregion Hometask #1
             Console.ReadKey();
         }
     }
