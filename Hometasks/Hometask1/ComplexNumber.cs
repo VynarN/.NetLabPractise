@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Hometask1
 {
-    class ComplexNumber
+    public class ComplexNumber
     {
-        public double Real { get;  set; }
-        public double Imaginary { get;  set; }
+        public double Real { get; set; }
+        public double Imaginary { get; set; }
         public ComplexNumber(double real, double imaginary)
         {
             Real = real;

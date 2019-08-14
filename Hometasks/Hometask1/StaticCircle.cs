@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Hometask1
 {
-    class StaticCircle
+    public class StaticCircle
     {
         public const double Pi = 3.14;
         public static double GetArea(double radius)

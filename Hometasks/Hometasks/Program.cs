@@ -1,6 +1,10 @@
 ﻿using System;
-
-namespace Hometask1
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Hometask1;
+namespace Hometasks
 {
     class Program
     {
@@ -8,8 +12,8 @@ namespace Hometask1
         {
             #region Hometask #1
             #region Testing all the classes related to Rectangle
-            var top_left = (x:0.0,y:4.0);
-            var bottom_right = (x:7.0,y:0.0);
+            var top_left = (x: 0.0, y: 4.0);
+            var bottom_right = (x: 7.0, y: 0.0);
             Console.WriteLine("Enter coordinates:");
             Console.Write("X for top left corner --> ");
             top_left.x = Convert.ToDouble(Console.ReadLine());
