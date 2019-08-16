@@ -26,10 +26,18 @@ namespace Hometask1
         }
         public Rectangle_2((double, double) top_left, (double, double) bottom_right)
         {
-            //<turple>.Item1 - x, <turple>.Item2 - y
-            // find out a width and a length of the rect via given coordinates
-            Width = top_left.Item2 - bottom_right.Item2;
-            Length = bottom_right.Item1 - top_left.Item1;
+            if (top_left.Item2 < bottom_right.Item2 ||
+               bottom_right.Item1 < top_left.Item1)
+            {
+                Console.WriteLine("Invalid coordinates!");
+                Width = 0;
+                Length = 0;
+            }
+            else
+            {
+                Width = Math.Abs(top_left.Item2) - Math.Abs(bottom_right.Item2);
+                Length = Math.Abs(bottom_right.Item1) - Math.Abs(top_left.Item1);
+            }
         }
     }
 }

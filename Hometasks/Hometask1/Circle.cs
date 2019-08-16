@@ -12,7 +12,8 @@ namespace Hometask1
         public double Radius { get; }
         public Circle(double radius)
         {
-            Radius = radius;
+            
+            Radius = Math.Abs(radius);
         }
         public double GetArea()
         {
