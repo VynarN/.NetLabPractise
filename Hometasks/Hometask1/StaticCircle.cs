@@ -11,7 +11,8 @@ namespace Hometask1
         public const double Pi = 3.14;
         public static double GetArea(double radius)
         {
-            return Pi * Math.Abs(radius) * radius;
+            radius = Math.Abs(radius);
+            return Pi * radius * radius;
         }
         public static double GetLength(double radius)
         {
