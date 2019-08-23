@@ -120,18 +120,21 @@ namespace Hometasks
             }
             const int ENTITIES = 5;
             Console.WriteLine("Enter the number of the page you want to check out:");
+            Console.WriteLine("(Pages start from 0)");
             int page;
-            if (!Int32.TryParse(Console.ReadLine(), out page) || page > list.Count / ENTITIES)
+            if (!Int32.TryParse(Console.ReadLine(), out page) || page * ENTITIES > list.Count)
             {
                 Console.WriteLine("Invalid input!");
             }
             else
             {
-                int j = list.Count / ENTITIES;
+                int j = page * ENTITIES;
                 int count = 0;
-                while (count++ < ENTITIES && j++ < list.Count)
+                while (count < ENTITIES && j < list.Count)
                 {
                     Console.WriteLine(list[j]);
+                    count++;
+                    j++;
                 }
             }
         }
