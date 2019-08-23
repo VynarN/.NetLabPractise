@@ -12,11 +12,11 @@ namespace Hometask1
         public double Length { get; }
         public Rectangle((double, double) top_left, (double, double) bottom_right)
         {
-            /*checking the validity of the coordinates:
-              Y of the left coordinate can not be smaller
-              than Y of the rigth one as well as X of
-              the rigth coordinate can not be smaller
-              than X of the left one */
+            //checking the validity of the coordinates:
+            //Y of the left coordinate can not be smaller
+            //than Y of the rigth one as well as X of
+            //the rigth coordinate can not be smaller
+            //than X of the left one 
             
             if (top_left.Item2 < bottom_right.Item2 ||
                 bottom_right.Item1 < top_left.Item1)

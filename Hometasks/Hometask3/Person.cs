@@ -11,11 +11,5 @@ namespace Hometask3
         public string Name { get; set; }
         public int Age { get; set; }
         public IEnumerable<string> PhoneNumbers { get; set; }
-        //public Person(string name, int age, IEnumerable<string> phone)
-        //{
-        //    Name = name;
-        //    Age = age;
-        //    PhoneNumbers = phone;
-        //}
     }
 }
