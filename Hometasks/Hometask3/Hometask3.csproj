@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0A7B445-C6A3-4238-9CB3-3593B6181EFB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Hometasks</RootNamespace>
-    <AssemblyName>Hometasks</AssemblyName>
+    <ProjectGuid>{E8B8D447-BA40-4CE0-94A9-64444C3E0BB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hometask3</RootNamespace>
+    <AssemblyName>Hometask3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,28 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="ProgramH1.cs" />
-    <Compile Include="ProgramH2.cs" />
-    <Compile Include="ProgramH3.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Hometask1\Hometask1.csproj">
-      <Project>{a6e9bf02-4794-437e-b631-97c2604da952}</Project>
-      <Name>Hometask1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hometask2\Hometask2.csproj">
-      <Project>{fd4e343c-4d7b-4517-a4c0-e83fd65a77ad}</Project>
-      <Name>Hometask2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hometask3\Hometask3.csproj">
-      <Project>{e8b8d447-ba40-4ce0-94a9-64444c3e0bb9}</Project>
-      <Name>Hometask3</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
